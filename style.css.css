@@ -1,0 +1,1346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFFFF;
+    color: #252641;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Kotak Mint Melengkung di Atas */
+.hero-wrapper {
+    background-color: #D2E6E4;
+    border-bottom-left-radius: 36px;
+    border-bottom-right-radius: 36px;
+    padding-bottom: 40px;
+}
+
+/* Navbar */
+.navbar {
+    padding: 24px 0;
+    position: relative;
+    z-index: 20;
+}
+
+.navbar-isi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.menu-link {
+    display: flex;
+    gap: 36px;
+}
+
+.menu-link a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #3E4554;
+}
+
+.menu-link a.aktif,
+.menu-link a:hover {
+    color: #FD661F;
+    font-weight: 600;
+}
+
+.menu-tombol {
+    display: flex;
+    gap: 14px;
+}
+
+/* Tombol */
+.tombol {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    z-index: 25;
+}
+
+.tombol-putih {
+    background-color: #FFFFFF;
+    cursor: pointer;
+    color: #0B7077;
+}
+
+.tombol-teal {
+    background-color: #0B7077;
+    color: #FFFFFF;
+}
+
+.tombol-oranye {
+    background-color: #FD661F;
+    color: #FFFFFF;
+    padding: 15px 30px;
+}
+
+/* Hero (2 Kolom: Kiri Teks, Kanan Gambar) */
+.hero {
+    padding-top: 20px;
+}
+
+.hero-isi {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    gap: 24px;
+}
+
+.badge-putih {
+    position: relative;
+    z-index: 25;
+    display: inline-block;
+    background-color: #FFFFFF;
+    color: #4A4A4A;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.hero-teks h1 {
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 1.22;
+    color: #0B7077;
+    margin-bottom: 28px;
+}
+
+.hero-aksi {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.review-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar-img {
+    height: 38px;
+    width: auto;
+}
+
+.rate-img {
+    height: 14px;
+    width: auto;
+}
+
+.review-box span {
+    font-size: 11px;
+    color: #4A4A4A;
+}
+
+/* Gambar Kanan */
+.hero-gambar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.foto-utama {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    display: block;
+}
+
+.kartu-statistik {
+    position: absolute;
+    left: -30px;
+    bottom: 60px;
+    background: #FFFFFF;
+    padding: 14px 20px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.ikon-kalender {
+    width: 42px;
+    height: 42px;
+    background: #23BDEE;
+    color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.kartu-statistik strong {
+    font-size: 17px;
+    display: block;
+}
+
+.kartu-statistik p {
+    font-size: 12px;
+    color: #595959;
+}
+
+.ikon-chart {
+    position: absolute;
+    right: 10px;
+    top: 38%;
+    width: 48px;
+    height: 48px;
+    background: #FD661F;
+    color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+/* Judul Section Popular Courses */
+.section-header {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.section-header h2 {
+    display: inline-block;
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f26522;
+}
+
+.section-header h2 span {
+    position: relative;
+    display: inline-block;
+}
+
+.section-header h2 span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 10px;
+    border-bottom: 2px solid #0f766e;
+    border-radius: 50%;
+}
+
+/* Pembungkus menu agar berada di tengah dan berjarak */
+.filter-kategori {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 28px;
+    margin-bottom: 40px;
+}
+
+/* Tampilan default tombol (putih dengan garis tepi tipis) */
+.filter-btn {
+    background-color: #FFFFFF;
+    color: #8A8A8A;
+    border: 1px solid #D9D9D9;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Tampilan tombol yang aktif & saat diarahkan kursor (hover) */
+.filter-btn.aktif,
+.filter-btn:hover {
+    background-color: #0B7077;
+    color: #FFFFFF;
+    border-color: #0B7077;
+    font-weight: 600;
+}
+
+/* Grid 4 kartu berjejer ke samping */
+.grid-khusus {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+
+/* Kotak utama setiap kartu */
+.kartu {
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    border: 1px solid #F0F2F5;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kartu:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+/* Bagian gambar atas kartu */
+.kartu-ikon {
+    flex:0 0 42%;
+    height: 155px;
+    overflow: hidden;
+}
+
+.kartu-ikon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Isi teks di bawah gambar */
+.isi-kursus {
+    padding: 0 16px 18px 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Badge siswa melayang di tengah antara gambar & isi teks */
+.badge-siswa {
+    position: relative;
+    z-index: 2;
+    align-self: center;
+    margin-top: -18px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    padding: 4px 10px;
+    border-radius: 999px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.badge-siswa img {
+    height: 22px;
+    width: auto;
+    display: block;
+}
+
+/* Tanggal kursus */
+.tanggal-kursus {
+    font-size: 11px;
+    color: #8A8A8A;
+    margin-bottom: 6px;
+    display: block;
+}
+
+/* Judul kursus */
+.isi-kursus h3 {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #0B7077;
+    margin-bottom: 8px;
+}
+
+/* Deskripsi singkat */
+.isi-kursus p {
+    font-size: 11.5px;
+    line-height: 1.5;
+    color: #6B7280;
+    margin-bottom: 16px;
+}
+
+/* Baris harga & tombol Enroll Now di bagian paling bawah kartu */
+.bawah-kursus {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding-top: 10px;
+    border-top: 1px solid #F3F4F6;
+}
+
+.harga {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+
+.harga-baru {
+    font-size: 15px;
+    font-weight: 700;
+    color: #FD661F;
+}
+
+.harga-lama {
+    font-size: 12px;
+    color: #9CA3AF;
+    text-decoration: line-through;
+}
+
+.btn-enroll {
+    background-color: #0B7077;
+    color: #FFFFFF;
+    font-size: 11.5px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: background-color 0.2s ease;
+}
+
+.btn-enroll:hover {
+    background-color: #08565C;
+}
+
+/* Responsif untuk layar tablet & HP */
+@media (max-width: 1024px) {
+    .grid-khusus {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-khusus {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Section Courses Category */
+.courses-category {
+    padding: 80px 0;
+}
+
+.kategori-header {
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto 48px auto;
+}
+
+.kategori-header h2 {
+    display: inline-block;
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0B7077;
+    margin-bottom: 14px;
+}
+
+/* Garis lengkung oranye di bawah kata "Category" */
+.kategori-header h2 span {
+    position: relative;
+    display: inline-block;
+}
+
+.kategori-header h2 span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 10px;
+    border-bottom: 2px solid #FD661F;
+    border-radius: 50%;
+}
+
+.kategori-header p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    color: #6B7280;
+}
+
+/* Grid 4 kartu kategori */
+.grid-kategori {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    align-items: center;
+}
+
+.kartu-kategori {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 32px 22px;
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Kartu ke-3 yang menonjol (atau saat di-hover) */
+.kartu-kategori.aktif,
+.kartu-kategori:hover {
+    background-color: #FFFFFF;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    transform: translateY(-4px);
+}
+
+.ikon-kategori {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 18px auto;
+}
+
+.lingkaran-ikon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 50%;
+}
+
+.gambar-ikon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 34px;
+    height: auto;
+    object-fit: contain;
+}
+
+.kartu-kategori h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0B7077;
+    margin-bottom: 10px;
+}
+
+.kartu-kategori p {
+    font-size: 12.5px;
+    line-height: 1.6;
+    color: #6B7280;
+    margin-bottom: 22px;
+}
+
+/* Tombol "more" */
+.btn-more {
+    display: inline-block;
+    padding: 8px 24px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #6B7280;
+    font-size: 12px;
+    font-weight: 500;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+}
+
+.btn-more:hover {
+    color: #0B7077;
+}
+
+/* Tombol "Explore courses" di kartu aktif */
+.btn-explore {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 8px;
+    background-color: #FD661F;
+    color: #FFFFFF;
+    font-size: 12.5px;
+    font-weight: 600;
+    box-shadow: 0 8px 18px rgba(253, 102, 31, 0.25);
+    transition: background-color 0.2s ease;
+}
+
+.btn-explore:hover {
+    background-color: #e45514;
+}
+
+/* Garis pink & tombol "view all" di bawah */
+.kategori-bawah {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-top: 36px;
+}
+
+.indikator-pink {
+    width: 22px;
+    height: 3px;
+    border-radius: 999px;
+    background-color: #EC4899;
+}
+
+.btn-view-all {
+    display: inline-block;
+    padding: 9px 28px;
+    border-radius: 8px;
+    border: 1px solid #0B7077;
+    color: #0B7077;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-view-all:hover {
+    background-color: #0B7077;
+    color: #FFFFFF;
+}
+
+/* Responsif tablet & HP */
+@media (max-width: 1024px) {
+    .grid-kategori {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .grid-kategori {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Section Benefits - Get Student ID card */
+.benefits-section {
+    padding: 60px 0 80px 0;
+}
+
+.benefits-isi {
+    display: grid;
+    grid-template-columns: 1fr 1.05fr;
+    align-items: center;
+    gap: 48px;
+}
+
+/* Badge "Benefits" */
+.badge-benefits {
+    display: inline-block;
+    background-color: #F3F4F6;
+    color: #0B7077;
+    font-size: 12.5px;
+    font-weight: 500;
+    padding: 7px 18px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+/* Judul "Get Student ID card" */
+.benefits-teks h2 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #0B7077;
+    margin-bottom: 32px;
+}
+
+/* Daftar 3 poin ikon + teks */
+.daftar-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.item-benefit {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Lingkaran putih berbayang untuk setiap ikon */
+.ikon-benefit {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.ikon-benefit img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+.item-benefit p {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #6B7280;
+}
+
+/* Kotak kanan berisi mockup ID Card */
+.benefits-gambar {
+    display: flex;
+    justify-content: center;
+}
+
+.kotak-id-card {
+    width: 100%;
+    background-color: #DCE8E6;
+    border-radius: 16px;
+    padding: 28px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kotak-id-card img {
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Responsif tablet & HP */
+@media (max-width: 900px) {
+    .benefits-isi {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .benefits-teks h2 {
+        font-size: 28px;
+    }
+}
+
+/* Section Training - Staff training */
+.training-section {
+    padding: 60px 0 80px 0;
+}
+
+.training-isi {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    align-items: center;
+    gap: 48px;
+}
+
+/* Kolom kiri ilustrasi */
+.training-gambar {
+    display: flex;
+    justify-content: center;
+}
+
+.training-gambar img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Badge "Training" */
+.badge-training {
+    display: inline-block;
+    background-color: #DCE7FA;
+    color: #5A7FB8;
+    font-size: 12.5px;
+    font-weight: 500;
+    padding: 7px 18px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+/* Judul "Staff training" warna oranye */
+.training-teks h2 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #FD661F;
+    margin-bottom: 32px;
+}
+
+/* Daftar 3 poin ikon + teks */
+.daftar-training {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.item-training {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Lingkaran putih berbayang + ikon besar di dalamnya */
+.ikon-training {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+    overflow: hidden;
+}
+
+.ikon-training img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(1.35);
+    display: block;
+}
+
+.item-training p {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #6B7280;
+}
+
+/* Responsif tablet & HP */
+@media (max-width: 900px) {
+    .training-isi {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .training-gambar {
+        order: -1;
+    }
+
+    .training-teks h2 {
+        font-size: 28px;
+    }
+}
+
+/* Section Gift Cards */
+.gift-cards-section {
+    padding: 110px 0 80px 0;
+}
+
+.gift-card-banner {
+    position: relative;
+    background-color: #DF1C1C;
+    border-radius: 16px;
+    padding: 48px 56px;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    min-height: 360px;
+}
+
+/* Kolom Teks Kiri */
+.gift-card-teks {
+    position: relative;
+    z-index: 2;
+    color: #FFFFFF;
+}
+
+.gift-card-teks h2 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.25;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+/* Daftar 3 Poin Ikon Bintang */
+.daftar-gift {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+.daftar-gift li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+/* Lingkaran putih kecil + bintang merah di dalamnya */
+.ikon-bintang {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    background-color: #FFFFFF;
+    color: #DF1C1C;
+    border-radius: 50%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tombol Putih BUY NOW */
+.btn-buy-now {
+    display: inline-block;
+    background-color: #FFFFFF;
+    color: #0B7077;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 13px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-buy-now:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Foto Model Kanan (Menonjol Keluar ke Atas) */
+.gift-card-gambar {
+    position: relative;
+    height: 100%;
+}
+
+.gift-card-gambar img {
+    position: absolute;
+    right: -20px;
+    bottom: -48px;
+    width: 430px;
+    max-width: none;
+    height: auto;
+    display: block;
+    z-index: 1;
+}
+
+/* Responsif Tablet & HP */
+@media (max-width: 960px) {
+    .gift-cards-section {
+        padding: 60px 0;
+    }
+
+    .gift-card-banner {
+        grid-template-columns: 1fr;
+        padding: 36px 28px 0 28px;
+        text-align: left;
+    }
+
+    .gift-card-teks h2 {
+        font-size: 28px;
+    }
+
+    .gift-card-gambar {
+        margin-top: 28px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .gift-card-gambar img {
+        position: static;
+        width: 100%;
+        max-width: 340px;
+    }
+}
+
+/* Section Exclusive Bundles */
+.bundles-section {
+    padding: 70px 0 90px 0;
+    overflow: hidden;
+}
+
+.bundles-header {
+    text-align: center;
+    max-width: 580px;
+    margin: 0 auto 48px auto;
+}
+
+.bundles-header h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #0B7077;
+    margin-bottom: 14px;
+}
+
+/* Garis lengkung tipis oranye di bawah kata "Bundles" */
+.bundles-highlight {
+    position: relative;
+    display: inline-block;
+}
+
+.bundles-highlight::after {
+    content: "";
+    position: absolute;
+    left: -4px;
+    right: -4px;
+    bottom: -6px;
+    height: 10px;
+    border-bottom: 2.5px solid #FD661F;
+    border-radius: 50%;
+}
+
+.bundles-header p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    color: #6B7280;
+    margin-bottom: 20px;
+}
+
+.bundles-garis-pink {
+    display: inline-block;
+    width: 24px;
+    height: 3px;
+    background-color: #EC4899;
+    border-radius: 999px;
+}
+
+/* Deretan kartu horizontal dengan efek mengintip di sisi kiri-kanan */
+.bundles-track {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 28px;
+}
+
+.kartu-bundle {
+    display: flex;
+    flex: 0 0 680px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
+}
+
+.kartu-bundle.peek {
+    opacity: 0.92;
+}
+
+/* Sisi kiri teal */
+.bundle-kiri {
+    position: relative;
+    flex: 0 0 44%;
+    background-color: #008B8B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+}
+
+.bundle-kiri img {
+    width: 118px;
+    height: 118px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Pill harga di pojok kanan bawah blok teal */
+.bundle-harga {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    background-color: #FFFFFF;
+    padding: 7px 14px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
+}
+
+.bundle-harga .harga-baru {
+    font-size: 13.5px;
+    font-weight: 800;
+    color: #FD661F;
+}
+
+.bundle-harga .harga-lama {
+    font-size: 12px;
+    font-weight: 500;
+    color: #9CA3AF;
+    text-decoration: line-through;
+}
+
+/* Sisi kanan putih */
+.bundle-kanan {
+    flex: 1;
+    padding: 26px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bundle-tanggal {
+    font-size: 11px;
+    color: #9CA3AF;
+    margin-bottom: 8px;
+}
+
+.bundle-kanan h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #0B7077;
+    margin-bottom: 10px;
+}
+
+.bundle-kanan p {
+    font-size: 12.5px;
+    line-height: 1.6;
+    color: #6B7280;
+    margin-bottom: 18px;
+}
+
+/* Badge avatar + "+ 40 students" */
+.bundle-siswa {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #F9FAFB;
+    border: 1px solid #F1F5F9;
+    padding: 6px 14px 6px 8px;
+    border-radius: 999px;
+    width: fit-content;
+}
+
+.bundle-siswa img {
+    height: 26px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.bundle-siswa span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #374151;
+}
+
+/* Responsif tablet & HP */
+@media (max-width: 900px) {
+    .bundles-track {
+        padding: 0 20px;
+    }
+
+    .kartu-bundle.peek {
+        display: none;
+    }
+
+    .kartu-bundle {
+        flex: 1 1 100%;
+        flex-direction: column;
+    }
+
+    .bundle-kiri {
+        flex: none;
+        min-height: 200px;
+    }
+}
+
+/* Footer */
+.footer-section {
+    position: relative;
+    background-color: #D7E5E3;
+    padding: 72px 0 64px 0;
+    margin-top: 20px;
+    border-top-left-radius: 50% 36px;
+    border-top-right-radius: 50% 36px;
+    overflow: hidden;
+}
+
+.footer-isi {
+    display: grid;
+    grid-template-columns: 1.35fr 0.9fr 0.75fr 1.35fr;
+    gap: 36px;
+    align-items: start;
+}
+
+/* Kolom 1: Logo & Kontak */
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 22px;
+}
+
+.footer-logo img {
+    height: 36px;
+    width: auto;
+    display: block;
+}
+
+.footer-kontak {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-kontak li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 12.5px;
+    line-height: 1.55;
+    color: #3F6F73;
+}
+
+.ikon-kontak {
+    color: #0B7077;
+    font-size: 14px;
+    line-height: 1.4;
+    flex-shrink: 0;
+}
+
+.footer-kontak strong {
+    display: block;
+    font-weight: 700;
+    color: #1F4E52;
+    margin-bottom: 2px;
+}
+
+.footer-kontak p {
+    margin: 0;
+}
+
+/* Kolom 2 & 3: Categories & Links */
+.footer-kolom h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1E293B;
+    margin-bottom: 18px;
+}
+
+.footer-kolom ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-kolom a {
+    font-size: 12.5px;
+    color: #3F6F73;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-kolom a:hover {
+    color: #0B7077;
+    font-weight: 600;
+}
+
+/* Kolom 4: Newsletter */
+.footer-newsletter {
+    padding-top: 4px;
+}
+
+.newsletter-judul {
+    font-size: 13px;
+    font-weight: 500;
+    color: #4B5563;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.form-newsletter {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 7px 7px 7px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+}
+
+.form-newsletter input[type="email"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #1F2937;
+    min-width: 0;
+}
+
+.form-newsletter input[type="email"]::placeholder {
+    color: #9CA3AF;
+}
+
+.form-newsletter button {
+    background-color: #0B7077;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 9px;
+    padding: 11px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.form-newsletter button:hover {
+    background-color: #08585E;
+    transform: translateY(-1px);
+}
+
+/* Responsif Tablet & HP */
+@media (max-width: 960px) {
+    .footer-section {
+        border-top-left-radius: 28px;
+        border-top-right-radius: 28px;
+        padding: 56px 0 48px 0;
+    }
+
+    .footer-isi {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    .footer-newsletter {
+        grid-column: 1 / -1;
+    }
+
+    .newsletter-judul {
+        text-align: left;
+    }
+}
+
+@media (max-width: 560px) {
+    .footer-isi {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+}

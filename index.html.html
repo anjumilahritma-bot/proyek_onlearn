@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onlearn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hero-wrapper">
+
+        <!-- 1. BAGIAN ATAS (LOGO & MENU) -->
+        <header class="navbar">
+            <div class="container navbar-isi">
+                <a href="#" class="logo">
+                    <img src="img/Frame 237646.png" alt="Logo Onlearn">
+                </a>
+
+                <nav class="menu">
+                    <ul class="menu-link">
+                        <li><a href="#" class="aktif">Home</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                    </ul>
+                    <div class="menu-tombol">
+                        <a href="#login" class="tombol tombol-putih" onclick="alert('Fitur Log In segera hadir!')">LOG IN</a>
+                        <a href="#signup" class="tombol tombol-teal" onclick="alert('Fitur Sign Up segera hadir!')">SIGN UP</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- 2. BAGIAN UTAMA (HERO) -->
+        <main>
+            <section class="hero">
+                <div class="container hero-isi">
+
+                    <!-- Kiri: Badge, Judul, Tombol, Review -->
+                    <div class="hero-teks">
+                        <a href="#courses" class="badge-putih">Never stop learning</a>
+
+                        <h1>
+                            Grow up your skills by<br>
+                            online courses with<br>
+                            Onlearning
+                        </h1>
+
+                        <div class="hero-aksi">
+                            <a href="#courses" class="tombol tombol-oranye">EXPLORE PATH</a>
+
+                            <div class="review-box">
+                                <img src="img/Picture.png" alt="Students" class="avatar-img">
+                                <div>
+                                    <img src="img/rate.png" alt="Rating" class="rate-img"><br>
+                                    <span>( 10k+ Reviews )</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kanan: Foto Mahasiswa & Kotak Info -->
+                    <div class="hero-gambar">
+                        <img src="img/image-uM5ZOTW7R-transformed 1.png" alt="Mahasiswa" class="foto-utama" onerror="this.src='https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=650&q=80'">
+
+                        <div class="kartu-statistik">
+                            <div class="ikon-kalender">
+                               <img src="img/Group 6.png" alt="ikon kalender" class="ornamen" onerror="this.src='https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=650&q=80'">
+                            </div>
+                            <div>
+                                <strong>250k</strong>
+                                <p>Assisted Student</p>
+                            </div>
+                        </div>
+
+                        <div class="ikon-chart">
+                            <img src="img/Group 9.png" alt="ikon chart" class="ornamen" onerror="this.src='https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=650&q=80'">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- 3. POPULAR COURSES -->
+    <section class="popular-courses">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular <span>Courses</span></h2>
+            </div>
+
+            <!-- Filter Kategori (class "aktif" hanya di tombol pertama) -->
+            <div class="filter-kategori">
+                <button type="button" class="filter-btn aktif">All Programme</button>
+                <button type="button" class="filter-btn">UI/UX Design</button>
+                <button type="button" class="filter-btn">Program Design</button>
+                <button type="button" class="filter-btn">Program Design</button>
+                <button type="button" class="filter-btn">Program Design</button>
+                <button type="button" class="filter-btn">Program Design</button>
+            </div>
+
+            <!-- Grid 4 Kartu Kursus (penutup </div> sudah dirapikan) -->
+            <div class="grid-khusus">
+                <!-- Kartu 1 -->
+                <article class="kartu">
+                    <div class="kartu-ikon"><img src="img/Rectangle 2749.png" alt=""></div>
+                    <div class="isi-kursus">
+                        <div class="badge-siswa"><img src="img/Frame 237647.png" alt=""></div>
+                        <span class="tanggal-kursus">1 - 28 July 2022</span>
+                        <h3>Product Management Basic - Course</h3>
+                        <p>Product Management Masterclass, you will learn with Sarah Johnson _ Head of Product Costumer Platform Gojek indonesia</p>
+                        <div class="bawah-kursus">
+                            <div class="harga">
+                                <span class="harga-baru">$ 380</span>
+                                <span class="harga-lama">$ 500</span>
+                            </div>
+                            <a href="#" class="btn-enroll">Enroll Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu 2 -->
+                <article class="kartu">
+                    <div class="kartu-ikon"><img src="img/Rectangle 2749 (1).png" alt=""></div>
+                    <div class="isi-kursus">
+                        <div class="badge-siswa"><img src="img/Frame 237647 (1).png" alt=""></div>
+                        <span class="tanggal-kursus">1 - 28 July 2022</span>
+                        <h3>BM Data Science Professional Certificate</h3>
+                        <p>Product Management Masterclass, you will learn with Sarah Johnson _ Head of Product Costumer Platform Gojek indonesia</p>
+                        <div class="bawah-kursus">
+                            <div class="harga">
+                                <span class="harga-baru">$ 678</span>
+                                <span class="harga-lama">$ 500</span>
+                            </div>
+                            <a href="#" class="btn-enroll">Enroll Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu 3 -->
+                <article class="kartu">
+                    <div class="kartu-ikon"><img src="img/Rectangle 2749 (2).png" alt=""></div>
+                    <div class="isi-kursus">
+                        <div class="badge-siswa"><img src="img/Frame 237647 (2).png" alt=""></div>
+                        <span class="tanggal-kursus">1 - 28 July 2022</span>
+                        <h3>The Science of Well-Being</h3>
+                        <p>Product Management Masterclass, you will learn with Sarah Johnson _ Head of Product Costumer Platform Gojek indonesia</p>
+                        <div class="bawah-kursus">
+                            <div class="harga">
+                                <span class="harga-baru">$ 123</span>
+                                <span class="harga-lama">$ 500</span>
+                            </div>
+                            <a href="#" class="btn-enroll">Enroll Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu 4 -->
+                <article class="kartu">
+                    <div class="kartu-ikon"><img src="img/Rectangle 2749 (3).png" alt=""></div>
+                    <div class="isi-kursus">
+                        <div class="badge-siswa"><img src="img/Frame 237647 (2).png" alt=""></div>
+                        <span class="tanggal-kursus">1 - 28 July 2022</span>
+                        <h3>Python for Everybody Specialization</h3>
+                        <p>Product Management Masterclass, you will learn with Sarah Johnson _ Head of Product Costumer Platform Gojek indonesia</p>
+                        <div class="bawah-kursus">
+                            <div class="harga">
+                                <span class="harga-baru">$ 567</span>
+                                <span class="harga-lama">$ 500</span>
+                            </div>
+                            <a href="#" class="btn-enroll">Enroll Now</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. BAGIAN COURSES CATEGORY -->
+    <section class="courses-category">
+        <div class="container">
+            <div class="kategori-header">
+                <h2>Courses <span>Category</span></h2>
+                <p>Onlearing is one powerful online software suite that combines all the tools needed to run a successful school or office.</p>
+            </div>
+
+            <!-- Grid 4 Kartu Kategori -->
+            <div class="grid-kategori">
+                <!-- Kartu 1 -->
+                <article class="kartu-kategori">
+                    <div class="ikon-kategori">
+                        <img src="img/028-1.png" alt="" class="lingkaran-ikon">
+                        <img src="img/Frame 20.png" alt="Beauty" class="gambar-ikon">
+                    </div>
+                    <h3>Beauty</h3>
+                    <p>One powerful online software suite that combines</p>
+                    <a href="#" class="btn-more">more</a>
+                </article>
+
+                <!-- Kartu 2 -->
+                <article class="kartu-kategori">
+                    <div class="ikon-kategori">
+                        <img src="img/028-1.png" alt="" class="lingkaran-ikon">
+                        <img src="img/Vaccine (1).png" alt="medical" class="gambar-ikon">
+                    </div>
+                    <h3>medical</h3>
+                    <p>One powerful online software suite that combines</p>
+                    <a href="#" class="btn-more">more</a>
+                </article>
+
+                <!-- Kartu 3 (Aktif / Menonjol) -->
+                <article class="kartu-kategori aktif">
+                    <div class="ikon-kategori">
+                        <img src="img/030-3.png" alt="sports">
+                    </div>
+                    <h3>sports</h3>
+                    <p>One powerful online software suite that combines</p>
+                    <a href="#" class="btn-explore">Explore courses</a>
+                </article>
+
+                <!-- Kartu 4 -->
+                <article class="kartu-kategori">
+                    <div class="ikon-kategori">
+                        <img src="img/031-4.png" alt="Nutrition">
+                    </div>
+                    <h3>Nutrition</h3>
+                    <p>One powerful online software suite that combines</p>
+                    <a href="#" class="btn-more">more</a>
+                </article>
+            </div>
+
+            <!-- Indikator garis kecil & tombol view all -->
+            <div class="kategori-bawah">
+                <span class="indikator-pink"></span>
+                <a href="#" class="btn-view-all">view all</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. BAGIAN BENEFITS (GET STUDENT ID CARD) -->
+    <section class="benefits-section">
+        <div class="container benefits-isi">
+
+            <!-- Kolom Kiri: Badge, Judul, dan 3 Poin -->
+            <div class="benefits-teks">
+                <span class="badge-benefits">Benefits</span>
+                <h2>Get Student ID card</h2>
+
+                <ul class="daftar-benefits">
+                    <li class="item-benefit">
+                        <div class="ikon-benefit">
+                            <img src="img/Group 237640.png" alt="Podium space">
+                        </div>
+                        <p>Teachers don't get lost in the grid view and have a dedicated Podium space.</p>
+                    </li>
+
+                    <li class="item-benefit">
+                        <div class="ikon-benefit">
+                            <img src="img/Group 237641.png" alt="Presenters">
+                        </div>
+                        <p>TA's and presenters can be moved to the front of the class.</p>
+                    </li>
+
+                    <li class="item-benefit">
+                        <div class="ikon-benefit">
+                            <img src="img/Group 237642.png" alt="Class data">
+                        </div>
+                        <p>Teachers can easily see all students and class data at one time.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Kolom Kanan: Kotak Mint & Gambar Student ID Card -->
+            <div class="benefits-gambar">
+                <div class="kotak-id-card">
+                    <img src="img/OBJECTS.png" alt="Student ID Card Mark J. William">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. BAGIAN TRAINING (STAFF TRAINING) -->
+    <section class="training-section">
+        <div class="container training-isi">
+
+            <!-- Kolom Kiri: Ilustrasi Staff Training -->
+            <div class="training-gambar">
+                <img src="img/pana.png" alt="Staff training illustration">
+            </div>
+
+            <!-- Kolom Kanan: Badge, Judul Oranye, dan 3 Poin -->
+            <div class="training-teks">
+                <span class="badge-training">Training</span>
+                <h2>Staff training</h2>
+
+                <ul class="daftar-training">
+                    <li class="item-training">
+                        <div class="ikon-training">
+                            <img src="img/Group 237640.png" alt="Podium space">
+                        </div>
+                        <p>Teachers don't get lost in the grid view and have a dedicated Podium space.</p>
+                    </li>
+
+                    <li class="item-training">
+                        <div class="ikon-training">
+                            <img src="img/Group 237641.png" alt="Presenters">
+                        </div>
+                        <p>TA's and presenters can be moved to the front of the class.</p>
+                    </li>
+
+                    <li class="item-training">
+                        <div class="ikon-training">
+                            <img src="img/Group 237642.png" alt="Class data">
+                        </div>
+                        <p>Teachers can easily see all students and class data at one time.</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. BAGIAN GIFT CARDS -->
+    <section class="gift-cards-section">
+        <div class="container">
+            <div class="gift-card-banner">
+
+                <!-- Kolom Kiri: Judul, 3 Poin Bintang, Tombol -->
+                <div class="gift-card-teks">
+                    <h2>Why You should buy<br>gift cards ?</h2>
+
+                    <ul class="daftar-gift">
+                        <li>
+                            <span class="ikon-bintang">★</span>
+                            <span>Teachers don't get lost in the grid view and have a dedicated Podium space.</span>
+                        </li>
+                        <li>
+                            <span class="ikon-bintang">★</span>
+                            <span>Teachers don't get lost in the grid view and have a dedicated Podium space.</span>
+                        </li>
+                        <li>
+                            <span class="ikon-bintang">★</span>
+                            <span>Teachers don't get lost in the grid view and have a dedicated Podium space.</span>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="btn-buy-now">BUY NOW</a>
+                </div>
+
+                <!-- Kolom Kanan: Foto Model Memegang Kartu Kuning -->
+                <div class="gift-card-gambar">
+                    <img src="img/image 6.png" alt="Woman holding gift card">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. BAGIAN EXCLUSIVE BUNDLES -->
+    <section class="bundles-section">
+        <div class="container">
+            <div class="bundles-header">
+                <h2>Exclusive <span class="bundles-highlight">Bundles</span></h2>
+                <p>Onlearing is one powerful online software suite that combines all the tools needed to run a successful school or office.</p>
+                <span class="bundles-garis-pink"></span>
+            </div>
+        </div>
+
+        <div class="bundles-track">
+            <!-- Kartu Intip Kiri -->
+            <article class="kartu-bundle peek">
+                <div class="bundle-kiri">
+                    <img src="img/bundle-python.png" alt="Bundle icon">
+                    <div class="bundle-harga">
+                        <span class="harga-baru">$ 380</span>
+                        <span class="harga-lama">$ 500</span>
+                    </div>
+                </div>
+                <div class="bundle-kanan">
+                    <span class="bundle-tanggal">1 - 28 July 2022</span>
+                    <h3>Product Management Basic - Course</h3>
+                    <p>Product Management Masterclass, you will learn with Sarah Johnson - Head of Product Customer Platform Gojek Indonesia.</p>
+                    <div class="bundle-siswa">
+                        <img src="img/Frame 237647.png" alt="Students">
+                        <span>+ 40 students</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Kartu Utama Tengah -->
+            <article class="kartu-bundle utama">
+                <div class="bundle-kiri">
+                    <img src="img/Rectangle 2749 (3).png" alt="Python bundle">
+                    <div class="bundle-harga">
+                        <span class="harga-baru">$ 380</span>
+                        <span class="harga-lama">$ 500</span>
+                    </div>
+                </div>
+                <div class="bundle-kanan">
+                    <span class="bundle-tanggal">1 - 28 July 2022</span>
+                    <h3>Product Management Basic -<br>Course</h3>
+                    <p>Product Management Masterclass, you will learn with Sarah Johnson - Head of Product Customer Platform Gojek Indonesia.</p>
+                    <div class="bundle-siswa">
+                        <img src="img/Frame 237647.png" alt="Students">
+                        <span>+ 40 students</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Kartu Intip Kanan -->
+            <article class="kartu-bundle peek">
+                <div class="bundle-kiri">
+                    <img src="img/Rectangle 2749 (3).png" alt="Bundle icon">
+                    <div class="bundle-harga">
+                        <span class="harga-baru">$ 380</span>
+                        <span class="harga-lama">$ 500</span>
+                    </div>
+                </div>
+                <div class="bundle-kanan">
+                    <span class="bundle-tanggal">1 - 28 July 2022</span>
+                    <h3>Product Management Basic - Course</h3>
+                    <p>Product Management Masterclass, you will learn with Sarah Johnson - Head of Product Customer Platform Gojek Indonesia.</p>
+                    <div class="bundle-siswa">
+                        <img src="img/Frame 237647.png" alt="Students">
+                        <span>+ 40 students</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- 9. BAGIAN FOOTER -->
+    <footer class="footer-section">
+        <div class="container footer-isi">
+
+            <!-- Kolom 1: Logo & Info Kontak -->
+            <div class="footer-info">
+                <a href="#" class="footer-logo">
+                    <img src="img/Frame 237646.png" alt="Logo Onlearn">
+                </a>
+
+                <ul class="footer-kontak">
+                    <li>
+                        <span class="ikon-kontak">📍</span>
+                        <div>
+                            <strong>Address:</strong>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="ikon-kontak">📞</span>
+                        <p>Tel: +9229341037</p>
+                    </li>
+                    <li>
+                        <span class="ikon-kontak">🕐</span>
+                        <p>Response hours: 8 to 20</p>
+                    </li>
+                    <li>
+                        <span class="ikon-kontak">✉</span>
+                        <p>Email: info@onlearn.com</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Kolom 2: Categories -->
+            <div class="footer-kolom">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Counseling</a></li>
+                    <li><a href="#">Health and fitness</a></li>
+                    <li><a href="#">Individual development</a></li>
+                    <li><a href="#">more</a></li>
+                </ul>
+            </div>
+
+            <!-- Kolom 3: Links -->
+            <div class="footer-kolom">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#about-us">About us</a></li>
+                    <li><a href="#blog">blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Kolom 4: Newsletter -->
+            <div class="footer-newsletter">
+                <p class="newsletter-judul">Stay up to date with the latest courses</p>
+                <form class="form-newsletter" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Email" aria-label="Email" required>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
